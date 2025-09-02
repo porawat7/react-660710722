@@ -41,22 +41,94 @@ function CombineComponents() {
                 <Profile />
             </section>
             
+             <section style={{
+                marginBottom: '40px',
+                padding: '20px',
+                border: '1px solid #36BA3D',
+                borderRadius: '8px',
+                backgroundColor: '#ecf59aff'
+            }}>
+                <h2 style={{ color: '#36BA3D', marginBottom: '20px' }}>
+                    Monday
+                </h2>
+                <RoutineMonday />
+            </section>
+
             <section style={{
                 marginBottom: '40px',
                 padding: '20px',
-                border: '1px solid #eee',
+                border: '1px solid #36BA3D',
                 borderRadius: '8px',
-                backgroundColor: '#ccf6f3ff'
+                backgroundColor: '#f099e9ff'
             }}>
-                <h2 style={{ color: '#333', marginBottom: '20px' }}>
-                    📝 รายการที่ต้องทำในแต่ละวัน
+                <h2 style={{ color: '#36BA3D', marginBottom: '20px' }}>
+                    Tuesday
                 </h2>
-                <RoutineMonday />
                 <RoutineTuesday />
+            </section>
+
+            <section style={{
+                marginBottom: '40px',
+                padding: '20px',
+                border: '1px solid #36BA3D',
+                borderRadius: '8px',
+                backgroundColor: '#98efc5ff'
+            }}>
+                <h2 style={{ color: '#36BA3D', marginBottom: '20px' }}>
+                    Wednesday
+                </h2>
                 <RoutineWednesday />
+            </section>
+
+            <section style={{
+                marginBottom: '40px',
+                padding: '20px',
+                border: '1px solid #36BA3D',
+                borderRadius: '8px',
+                backgroundColor: '#eeb116ff'
+            }}>
+                <h2 style={{ color: '#36BA3D', marginBottom: '20px' }}>
+                    Thursday
+                </h2>
                 <RoutineThursday />
+            </section>
+
+            <section style={{
+                marginBottom: '40px',
+                padding: '20px',
+                border: '1px solid #36BA3D',
+                borderRadius: '8px',
+                backgroundColor: '#78ddf6ff'
+            }}>
+                <h2 style={{ color: '#36BA3D', marginBottom: '20px' }}>
+                    Friday
+                </h2>
                 <RoutineFriday />
-                <RoutineSaturday />
+            </section>
+
+            <section style={{
+                marginBottom: '40px',
+                padding: '20px',
+                border: '1px solid #36BA3D',
+                borderRadius: '8px',
+                backgroundColor: '#cd9af5ff'
+            }}>
+                <h2 style={{ color: '#36BA3D', marginBottom: '20px' }}>
+                    Saturday
+                </h2>
+                <RoutineSaturday/>
+            </section>
+
+            <section style={{
+                marginBottom: '40px',
+                padding: '20px',
+                border: '1px solid #36BA3D',
+                borderRadius: '8px',
+                backgroundColor: '#f59292ff'
+            }}>
+                <h2 style={{ color: '#36BA3D', marginBottom: '20px' }}>
+                    Sunday
+                </h2>
                 <RoutineSunday />
             </section>
         </div>

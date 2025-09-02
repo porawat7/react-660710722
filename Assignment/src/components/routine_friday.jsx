@@ -4,19 +4,18 @@ const routine_friday = () => {
     const todos = [
         { id: 1, text: 'ตื่นนอน 05:50-06:00', completed: true },
         { id: 2, text: 'อาบน้ำ 06:00-06:20', completed: true },
-        { id: 3, text: 'ทานอาหารเช้า 06.20-6:40', completed: true },
+        { id: 3, text: 'ทานอาหารเช้า 06.20-6:40', completed: false },
         { id: 4, text: 'ไปมหาวิทยาลัย 6:40-8:30', completed: true },
         { id: 5, text: 'เข้าเรียน 8:30-11.10', completed: true },
         { id: 6, text: 'ทานอาหารกลางวัน 11:10-12:00', completed: true },
         { id: 7, text: 'พักผ่อน 12:00-13:00', completed: true },
         { id: 8, text: 'เข้าเรียนคาบบ่าย 13:00-16:40', completed: true },
-        { id: 9, text: 'กลับบ้าน 16:40-17:00', completed: true },
+        { id: 9, text: 'กลับบ้าน 16:40-17:00', completed: true},
         { id: 10, text: 'อาบน้ำ 17:00-17:20', completed: true },
         { id: 11, text: 'ทานอาหารเย็น 17:20-18:00', completed: true },
-        { id: 12, text: 'ทำการบ้าน 18:00-19:30', completed: true },
+        { id: 12, text: 'ทำการบ้าน 18:00-19:30', completed: false },
         { id: 13, text: 'เล่นเกม 19:30-21:30', completed: true },
-        { id: 14, text: 'เล่นเกม 19:30-22:00', completed: true },
-        { id: 15, text: 'นอน 22:00-5.50', completed: true },
+        { id: 14, text: 'นอน 21:30-5.50', completed: true },
 
     ];
     
@@ -25,10 +24,10 @@ const routine_friday = () => {
     const totalCount = todos.length;
     const percentage = Math.round((completedCount / totalCount) * 100);
     
-    return (
+   return (
         <div style={{ maxWidth: '500px', margin: '20px auto', padding: '20px' }}>
+            <h3>📝 รายการที่ต้องทำ</h3>
             
-            <h4>วันศุกร์</h4>
             {/* Progress Bar */}
             <div style={{
                 backgroundColor: '#f0f0f0',
@@ -90,7 +89,7 @@ const routine_friday = () => {
                 borderRadius: '8px',
                 fontWeight: 'bold'
             }}>
-                 ทำเสร็จแล้ว {completedCount} จาก {totalCount} รายการ
+                ✨ ทำเสร็จแล้ว {completedCount} จาก {totalCount} รายการ
             </div>
         </div>
     );

@@ -22,8 +22,8 @@ const routine_saturday = () => {
     
     return (
         <div style={{ maxWidth: '500px', margin: '20px auto', padding: '20px' }}>
+            <h3>📝 รายการที่ต้องทำ</h3>
             
-            <h4>วันเสาร์</h4>
             {/* Progress Bar */}
             <div style={{
                 backgroundColor: '#f0f0f0',
@@ -85,10 +85,9 @@ const routine_saturday = () => {
                 borderRadius: '8px',
                 fontWeight: 'bold'
             }}>
-                 ทำเสร็จแล้ว {completedCount} จาก {totalCount} รายการ
+                ✨ ทำเสร็จแล้ว {completedCount} จาก {totalCount} รายการ
             </div>
         </div>
     );
 };
-
 export default routine_saturday;
