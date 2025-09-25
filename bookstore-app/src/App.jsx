@@ -7,11 +7,11 @@ import Navbar from './components/Navbar';
 
 // Import Pages
 import HomePage from './pages/HomePage';
-//import BookListPage from './pages/BookListPage';
-//import BookDetailPage from './pages/BookDetailPage';
-//import CategoryPage from './pages/CategoryPage';
-//import AboutPage from './pages/AboutPage';
-//import ContactPage from './pages/ContactPage';
+// import BookListPage from './pages/BookListPage';
+import BookDetailPage from './pages/BookDetailPage';
+import CategoryPage from './pages/CategoryPage';
+import AboutPage from './pages/AboutPage';
+import ContactPage from './pages/ContactPage';
 import NotFound from './components/NotFound.jsx';
 
 // Import CSS
@@ -27,8 +27,12 @@ function App() {
       <main className="main-content">
         <Routes>
           {/* หน้าแรก - แสดงหนังสือแนะนำ */}
-          <Route path="/" element={<HomePage />} />
-          
+          <Route path="/" element={<HomePage />} />  
+          <Route path="/books" element={<BookDetailPage />} />  
+          <Route path="/category/fiction" element={<CategoryPage/>} /> 
+          <Route path="/About" element={<AboutPage/>} />   
+          <Route path="/Contact" element={<ContactPage/>} />  
+
          
           {/* หน้า 404 - สำหรับ URL ที่ไม่มีอยู่ */}
           <Route path="*" element={<NotFound />} />

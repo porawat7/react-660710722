@@ -26,6 +26,7 @@ const Navbar = () => {
           >
             Home
           </NavLink>
+          
           <NavLink 
             to="/books" 
             className={({ isActive }) => isActive ? 'nav-link active' : 'nav-link'}
